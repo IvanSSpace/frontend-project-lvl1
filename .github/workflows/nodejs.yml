@@ -1,0 +1,26 @@
+name: 'test my project'
+on:
+  - push
+
+jobs:
+  build:
+    runs-on:  ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
+    steps:
+    - uses: actions/checkout@v2 # Извлечь репозиторий в рабочей области GitHub
+    - name: Use Node ${{ matrix.node }}
+      uses: actions/setup-node@v2 # Настраивает версию узла, используемую в исполнителях, размещенных на GitHub
+
+      with:
+        node-version: ${{ matrix.node }} # Версия Node.js для настройки
+    - name: npm install
+      run: make install
+      
+      env:
+        CI: true
+    - name: Run liner
+      run: make lint
