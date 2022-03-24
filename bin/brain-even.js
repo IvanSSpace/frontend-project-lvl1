@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import getRandomInt from '../scr/modRandom.js';
-import { LowLvlApp, nameOur } from '../scr/cli.js';
 
-LowLvlApp();// Приветствие игры и пользователя
+console.log('Welcome to the Brain Games!');
+const user = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${user}!`);
+
+// lowLvlApp();// Приветствие игры и пользователя
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -19,7 +22,7 @@ const braineven = () => {
         console.log('Correct!');
       } else {
         console.log('\'no\' is wrong answer ;(. Correct answer was \'yes\'.');
-        console.log(`Let's try again, ${nameOur}`);
+        console.log(`Let's try again, ${user}`);
         return;// не break тк выход нужен чтобы после функции не выполнялось сообщение о победе
       }
     }
@@ -29,11 +32,11 @@ const braineven = () => {
         console.log('Correct!');
       } else {
         console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
-        console.log(`Let's try again, ${nameOur}`);
+        console.log(`Let's try again, ${user}`);
         return;
       }
     }
   }
 };
 braineven();
-console.log(`Congratulations, ${nameOur}`);
+console.log(`Congratulations, ${user}`);
