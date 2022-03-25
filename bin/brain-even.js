@@ -1,18 +1,18 @@
 #!/usr/bin/env node
+/* eslint-disable import/no-named-as-default */
 import readlineSync from 'readline-sync';
 import getRandomInt from '../scr/modRandom.js';
+// eslint-disable-next-line import/no-named-as-default-member
+import name from '../scr/cli.js';// почему-то говорит про ошибку в импорте
 
-console.log('Welcome to the Brain Games!');
-const user = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${user}!`);
-
-// lowLvlApp();// Приветствие игры и пользователя
+console.log('brain-even');
+console.log();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const braineven = () => {
   for (let i = 0; i < 3; i += 1) {
-    const namberR = getRandomInt(100);
+    const namberR = getRandomInt(1, 100);
     console.log(`Question: ${namberR}`);
 
     const inputYN = readlineSync.question('Your answer: ');
@@ -22,7 +22,7 @@ const braineven = () => {
         console.log('Correct!');
       } else {
         console.log('\'no\' is wrong answer ;(. Correct answer was \'yes\'.');
-        console.log(`Let's try again, ${user}`);
+        console.log(`Let's try again, ${name}`);
         return;// не break тк выход нужен чтобы после функции не выполнялось сообщение о победе
       }
     }
@@ -32,12 +32,12 @@ const braineven = () => {
         console.log('Correct!');
       } else {
         console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
-        console.log(`Let's try again, ${user}`);
+        console.log(`Let's try again, ${name}`);
         return;
       }
     }
     if (i === 2) {
-      console.log(`Congratulations, ${user}!`);
+      console.log(`Congratulations, ${name}!`);
     }
   }
 };
