@@ -36,7 +36,10 @@ const braineven = () => {
         return;
       }
     }
+    if (i === 2) {
+      console.log(`Congratulations, ${user}!`);
+    }
   }
 };
+
 braineven();
-console.log(`Congratulations, ${user}`);
