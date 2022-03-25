@@ -5,4 +5,4 @@
 
 [![test my project](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-<a href=https://asciinema.org/a/O7xR2eMyWK1sWDCJZly9mvScb></a>
+[![asciicast](https://asciinema.org/a/480570.svg)](https://asciinema.org/a/480570)
