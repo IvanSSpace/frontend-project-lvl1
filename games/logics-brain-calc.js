@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import getRandomInt from '../scr/modRandom.js';
 import { startSay, name } from '../scr/cli.js';
