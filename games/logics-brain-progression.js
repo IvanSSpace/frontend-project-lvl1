@@ -9,7 +9,7 @@ const brainprogression = () => {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
     const array = [];
-    const randomNum = getRandomInt(2, 10);
+    const randomNum = getRandomInt(2, 9);
     for (let v = 0; v < 10; v += 1) {
       array.push(randomNum * (v + 1));
     }
