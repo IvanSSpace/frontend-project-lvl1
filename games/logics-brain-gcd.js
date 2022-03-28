@@ -9,9 +9,7 @@ const braingcd = () => {
 
   let num1 = 0; let num2 = 0; let zxc = 0;
   for (let i = 0; i < 3; i += 1) {
-    // eslint-disable-next-line no-const-assign
     num1 = getRandomInt(1, 20);
-    // eslint-disable-next-line no-const-assign
     num2 = getRandomInt(1, 20);
     zxc = 0;
 
