@@ -7,16 +7,17 @@ const braingcd = () => {
   startSay();
   console.log('Find the greatest common divisor of given numbers.');
 
+  let num1 = 0; let num2 = 0; let zxc = 0;
   for (let i = 0; i < 3; i += 1) {
-    const num1 = getRandomInt(1, 20);
-    const num2 = getRandomInt(1, 20);
-    let Maxnum = 0;
-    let zxc = 0;
-    if (num1 < num2) { Maxnum = num1; } else { Maxnum = num2; } // находим наибольшее
+    // eslint-disable-next-line no-const-assign
+    num1 = getRandomInt(1, 20);
+    // eslint-disable-next-line no-const-assign
+    num2 = getRandomInt(1, 20);
+    zxc = 0;
 
     console.log(`Question: ${num1} ${num2}`);
 
-    for (let v = Maxnum; v > 0; v -= 1) {
+    for (let v = num1; v > 0; v -= 1) {
       if (num1 % v === 0 && num2 % v === 0) {
         // eslint-disable-next-line no-unused-vars
         zxc = v;
@@ -38,4 +39,5 @@ const braingcd = () => {
     }
   }
 };
-braingcd();
+
+export default braingcd;
