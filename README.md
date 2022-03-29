@@ -5,6 +5,12 @@
 
 [![test my project](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-[![asciicast](https://asciinema.org/a/480570.svg)](https://asciinema.org/a/480570)
+[![asciicast](https://asciinema.org/a/481720.svg)](https://asciinema.org/a/481720)
 
-[![asciicast](https://asciinema.org/a/481390.svg)](https://asciinema.org/a/481390)
+[![asciicast](https://asciinema.org/a/481725.svg)](https://asciinema.org/a/481725)
+
+[![asciicast](https://asciinema.org/a/481731.svg)](https://asciinema.org/a/481731)
+
+[![asciicast](https://asciinema.org/a/481737.svg)](https://asciinema.org/a/481737)
+
+[![asciicast](https://asciinema.org/a/481739.svg)](https://asciinema.org/a/481739)
