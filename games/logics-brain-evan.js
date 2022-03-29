@@ -11,13 +11,13 @@ const braineven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const arr = ['yes', 'no'];
   for (let i = 0; i < 3; i += 1) {
-    const namberR = getRandomInt(1, 100);
-    console.log(`Question: ${namberR}`);
+    const randomNum = getRandomInt(1, 100);
+    console.log(`Question: ${randomNum}`);
 
     const inputYN = readlineSync.question('Your answer: ');
-    if (inputYN === arr[namberR % 2]) console.log('Correct!');
+    if (inputYN === arr[randomNum % 2]) console.log('Correct!');
     else {
-      console.log(` ${inputYN} is wrong answer ;(. Correct answer was ${arr[namberR % 2]}.`);
+      console.log(` ${inputYN} is wrong answer ;(. Correct answer was ${arr[inputYN % 2]}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }
