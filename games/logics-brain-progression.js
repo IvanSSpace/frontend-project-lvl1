@@ -14,16 +14,16 @@ const brainprogression = () => {
       array.push(randomNum * (v + 1));
     }
 
-    const stelsNum = getRandomInt(0, 9); // скрытый индекс
-    const trueNum = Number(array[stelsNum]);// запись правильного ответа
-    array[stelsNum] = '..'; // скрываем число
+    const stelsNum = getRandomInt(0, 9);
+    const inputSystem = Number(array[stelsNum]);
+    array[stelsNum] = '..';
 
     console.log(`Question: ${array}`);
-    const resultUser = Number(readlineSync.question('Your answer: '));
-    if (resultUser === trueNum) {
+    const inputUser = Number(readlineSync.question('Your answer: '));
+    if (inputUser === inputSystem) {
       console.log('Correct!');
     } else {
-      console.log(`${resultUser} is wrong answer ;(. Correct answer was ${trueNum}.`);
+      console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }

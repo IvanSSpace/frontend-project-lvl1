@@ -9,28 +9,27 @@ const braingcd = () => {
 
   let num1 = 0;
   let num2 = 0;
-  let result = 0;
+  let inputSystem = 0;
   for (let i = 0; i < 3; i += 1) {
     num1 = getRandomInt(1, 20);
     num2 = getRandomInt(1, 20);
-    result = 0;
+    inputSystem = 0;
 
     console.log(`Question: ${num1} ${num2}`);
 
     for (let v = num1; v > 0; v -= 1) {
       if (num1 % v === 0 && num2 % v === 0) {
-        // eslint-disable-next-line no-unused-vars
-        result = v;
+        inputSystem = v;
         break;
       }
     }
 
-    const resultUser = Number(readlineSync.question('Your answer: '));
+    const inputUser = Number(readlineSync.question('Your answer: '));
 
-    if (resultUser === result) {
+    if (inputUser === inputSystem) {
       console.log('Correct!');
     } else {
-      console.log(`${resultUser} is wrong answer ;(. Correct answer was ${result}.`);
+      console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }

@@ -13,10 +13,10 @@ const brainprime = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNum = getRandomInt(3, 10);
 
-    let test = 'yes';
+    let inputSystem = 'yes';
     for (let v = 2; v < randomNum; v += 1) {
       if (randomNum % v === 0) {
-        test = 'no';
+        inputSystem = 'no';
         break;
       }
     }
@@ -24,10 +24,10 @@ const brainprime = () => {
     console.log(`Question: ${randomNum}`);
     const inputUser = readlineSync.question('Your answer: ');
 
-    if (inputUser === test) {
+    if (inputUser === inputSystem) {
       console.log('Correct!');
     } else {
-      console.log(`${inputUser} is wrong answer ;(. Correct answer was ${test}.`);
+      console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }

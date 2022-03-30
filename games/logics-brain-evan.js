@@ -13,11 +13,11 @@ const braineven = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNum = getRandomInt(1, 100);
     console.log(`Question: ${randomNum}`);
-
-    const inputYN = readlineSync.question('Your answer: ');
-    if (inputYN === arr[randomNum % 2]) console.log('Correct!');
+    const inputSystem = arr[randomNum % 2];
+    const inputUser = readlineSync.question('Your answer: ');
+    if (inputUser === inputSystem) console.log('Correct!');
     else {
-      console.log(` ${inputYN} is wrong answer ;(. Correct answer was ${arr[inputYN % 2]}.`);
+      console.log(` ${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }
