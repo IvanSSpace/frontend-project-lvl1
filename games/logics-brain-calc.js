@@ -24,7 +24,6 @@ const logics = () => {
       break;
     default:
   }
-  String(inputSystem);
   const unit = (`${num1} ${counter} ${num2}`);
   return [unit, inputSystem];// возврат задания и ответа скрипта
 };

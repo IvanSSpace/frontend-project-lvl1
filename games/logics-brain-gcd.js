@@ -4,9 +4,6 @@ import indexStart from '../scr/index.js';
 const nameGame = ('brain-gcd');
 const leson = ('Find the greatest common divisor of given numbers.');
 
-// let num1 = 0;
-// let num2 = 0;
-// let inputSystem = 0;
 const logics = () => {
   const num1 = getRandomInt(1, 20);
   const num2 = getRandomInt(1, 20);

@@ -12,7 +12,7 @@ const indexStart = (nameGame, leson, logics) => {
     const [unit, inputSystem] = logics();
     console.log(`Questions: ${unit}`);
     const inputUser = (readlineSync.question('Your answer: '));
-    if (inputUser === inputSystem) {
+    if (String(inputUser) === String(inputSystem)) {
       console.log('Correct!');
     } else {
       console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
