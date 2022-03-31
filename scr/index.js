@@ -1,24 +1,24 @@
 import readlineSync from 'readline-sync';
 
-let name = '';
-const greetings = () => {
+const indexStart = (nameGame, leson, braincalc) => {
+  console.log(` ${nameGame} `);
   console.log();
   console.log('Welcome to the Brain Games!');
-  name = readlineSync.question('Your answer: ');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-};
-
-const comparisonAnswers = () => {
-  if (inputSystem === inputUser) {
-    console.log('Correct!');
-  } else {
-    console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
-    console.log(`Let's try again, ${name}`);
-    return;
-  }
-  if (i === 2) {
+  console.log(` ${leson} `);
+  for (let i = 0; i < 2; i += 1) {
+    const [unit, imput] = braincalc();
+    console.log(`Questions: ${unit}`);
+    const inputUser = (readlineSync.question('Your answer: '));
+    if (inputUser === inputSystem) {
+      console.log('Correct!');
+    } else {
+      console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
+      console.log(`Let's try again, ${name}`);
+      return;
+    }
     console.log(`Congratulations, ${name}!`);
   }
 };
-
-export { greetings, comparisonAnswers, name };
+export default indexStart;
