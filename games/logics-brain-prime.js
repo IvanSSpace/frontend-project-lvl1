@@ -31,10 +31,8 @@ const brainprime = () => {
       console.log(`Let's try again, ${name}`);
       return;
     }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
-    }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default brainprime;

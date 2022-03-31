@@ -33,10 +33,8 @@ const braingcd = () => {
       console.log(`Let's try again, ${name}`);
       return;
     }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
-    }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default braingcd;

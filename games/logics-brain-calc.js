@@ -4,7 +4,7 @@ import { startSay, name } from '../scr/cli.js';
 
 const braincalc = () => {
   console.log('brain-calc');
-  startSay();// сюда начало игры
+  startSay();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const num1 = getRandomInt(1, 10);
@@ -36,10 +36,8 @@ const braincalc = () => {
       console.log(`Let's try again, ${name}`);
       return;
     }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
-    }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default braincalc;
