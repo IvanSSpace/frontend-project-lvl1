@@ -4,7 +4,7 @@ import indexStart from '../scr/index.js';
 const nameGame = ('brain-calc');
 const leson = ('What is the result of the expression?');
 
-const braincalc = () => {
+const logics = () => {
   const num1 = getRandomInt(1, 10);
   const num2 = getRandomInt(1, 10);
   const arr = ['+', '-', '*'];
@@ -29,8 +29,8 @@ const braincalc = () => {
   return [unit, inputSystem];// возврат задания и ответа скрипта
 };
 
-const braincalcRun = () => {
-  indexStart(nameGame, leson, braincalc);
+const braincalc = () => {
+  indexStart(nameGame, leson, logics);
 };
 
-export default braincalcRun;
+export default braincalc;
