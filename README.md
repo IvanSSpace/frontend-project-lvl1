@@ -10,13 +10,14 @@
 
 [![test my project](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-make brain-even
+1 make brain-even 2 make brain-calc 3 make brain-gcd 4 make brain-progression 5 make brain-prime
+
 [![asciicast](https://asciinema.org/a/481720.svg)](https://asciinema.org/a/481720)
-make brain-calc
+
 [![asciicast](https://asciinema.org/a/481725.svg)](https://asciinema.org/a/481725)
-make brain-gcd
+
 [![asciicast](https://asciinema.org/a/481731.svg)](https://asciinema.org/a/481731)
-make brain-progression
+
 [![asciicast](https://asciinema.org/a/481737.svg)](https://asciinema.org/a/481737)
-make brain-prime
+
 [![asciicast](https://asciinema.org/a/481739.svg)](https://asciinema.org/a/481739)
