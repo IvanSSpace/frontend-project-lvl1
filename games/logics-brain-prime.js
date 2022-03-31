@@ -7,8 +7,8 @@ const logics = () => {
   const randomNum = getRandomInt(3, 10);
 
   let inputSystem = 'yes';
-  for (let v = 2; v < randomNum; v += 1) {
-    if (randomNum % v === 0) {
+  for (let i = 2; i < randomNum; i += 1) {
+    if (randomNum % i === 0) {
       inputSystem = 'no';
       break;
     }

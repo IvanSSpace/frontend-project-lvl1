@@ -1,3 +1,9 @@
+1 Проект на Hexlet. 
+Игры: 1. brain-even (Проверка на чётность), 2. brain-calc (Калькулятор), 3. brain-gcd (Наибольший общий делитель "НОД"), 4. brain-progression (Арифметическая прогрессия), brain-prime (Простое ли число?).
+
+Чтобы установить игры в консоли напишите 'make install'. После этого можно запустить 1 из 5 игр, для этого напишите в консоли название в скобках. Примеры установки и запуска игр: игра Brain-even:
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/phenixBolseChemTree/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions)
 

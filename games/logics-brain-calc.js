@@ -7,8 +7,8 @@ const leson = ('What is the result of the expression?');
 const logics = () => {
   const num1 = getRandomInt(1, 10);
   const num2 = getRandomInt(1, 10);
-  const arr = ['+', '-', '*'];
-  const counter = arr[getRandomInt(0, 2)];
+  const arrSigns = ['+', '-', '*'];
+  const counter = arrSigns[getRandomInt(0, 2)];
 
   let inputSystem = 0;
 

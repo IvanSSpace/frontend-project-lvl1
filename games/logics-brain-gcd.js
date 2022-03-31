@@ -10,9 +10,9 @@ const logics = () => {
   let inputSystem = 0;
   const unit = (`${num1} ${num2}`);
 
-  for (let v = num1; v > 0; v -= 1) {
-    if (num1 % v === 0 && num2 % v === 0) {
-      inputSystem = v;
+  for (let i = num1; i > 0; i -= 1) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      inputSystem = i;
       break;
     }
   }
