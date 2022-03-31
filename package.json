@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/phenixBolseChemTree/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/phenixBolseChemTree/frontend-project-lvl1/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-even": "bin/brain-even.js",
     "brain-gcd": "bin/brain-gcd.js",
