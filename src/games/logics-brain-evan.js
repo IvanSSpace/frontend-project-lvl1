@@ -1,7 +1,6 @@
-import getRandomInt from '../scr/modRandom.js';
-import indexStart from '../scr/index.js';
+import getRandomInt from '../modRandom.js';
+import indexStart from '../index.js';
 
-const nameGame = ('brain-even');
 const leson = ('Answer "yes" if the number is even, otherwise answer "no".');
 const arrYN = ['yes', 'no'];
 const logics = () => {
@@ -12,7 +11,7 @@ const logics = () => {
 };
 
 const braineven = () => {
-  indexStart(nameGame, leson, logics);
+  indexStart(leson, logics);
 };
 
 export default braineven;

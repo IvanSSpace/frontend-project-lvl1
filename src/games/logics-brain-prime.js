@@ -1,7 +1,6 @@
-import getRandomInt from '../scr/modRandom.js';
-import indexStart from '../scr/index.js';
+import getRandomInt from '../modRandom.js';
+import indexStart from '../index.js';
 
-const nameGame = ('brain-prime');
 const leson = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 const logics = () => {
   const randomNum = getRandomInt(3, 10);
@@ -18,7 +17,7 @@ const logics = () => {
 };
 
 const brainprime = () => {
-  indexStart(nameGame, leson, logics);
+  indexStart(leson, logics);
 };
 
 export default brainprime;

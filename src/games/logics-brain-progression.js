@@ -1,7 +1,6 @@
-import getRandomInt from '../scr/modRandom.js';
-import indexStart from '../scr/index.js';
+import getRandomInt from '../modRandom.js';
+import indexStart from '../index.js';
 
-const nameGame = ('brain-progression');
 const leson = ('What number is missing in the progression?');
 const logics = () => {
   const array = [];
@@ -14,11 +13,11 @@ const logics = () => {
   array[stelsNum] = '..';
 
   const unit = (`${array}`);
-  return [unit, inputSystem];
+  return [unit, String(inputSystem)];
 };
 
 const brainprogression = () => {
-  indexStart(nameGame, leson, logics);
+  indexStart(leson, logics);
 };
 
 export default brainprogression;

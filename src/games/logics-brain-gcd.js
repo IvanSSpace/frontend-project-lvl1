@@ -1,9 +1,7 @@
-import getRandomInt from '../scr/modRandom.js';
-import indexStart from '../scr/index.js';
+import getRandomInt from '../modRandom.js';
+import indexStart from '../index.js';
 
-const nameGame = ('brain-gcd');
 const leson = ('Find the greatest common divisor of given numbers.');
-
 const logics = () => {
   const num1 = getRandomInt(1, 20);
   const num2 = getRandomInt(1, 20);
@@ -16,11 +14,11 @@ const logics = () => {
       break;
     }
   }
-  return [unit, inputSystem];
+  return [unit, String(inputSystem)];
 };
 
 const braingcd = () => {
-  indexStart(nameGame, leson, logics);
+  indexStart(leson, logics);
 };
 
 export default braingcd;

@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const indexStart = (nameGame, leson, logics) => {
-  console.log(`${nameGame}`);
-  console.log();
+const indexStart = (leson, logics) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -12,13 +10,13 @@ const indexStart = (nameGame, leson, logics) => {
     const [unit, inputSystem] = logics();
     console.log(`Questions: ${unit}`);
     const inputUser = (readlineSync.question('Your answer: '));
-    if (String(inputUser) === String(inputSystem)) {
-      console.log('Correct!');
-    } else {
+    if (inputUser !== inputSystem) {
       console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
       console.log(`Let's try again, ${name}`);
       return;
     }
+    console.log('Correct!');
+
     console.log(`Congratulations, ${name}!`);
   }
 };

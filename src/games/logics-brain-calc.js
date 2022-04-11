@@ -1,7 +1,6 @@
-import getRandomInt from '../scr/modRandom.js';
-import indexStart from '../scr/index.js';
+import getRandomInt from '../modRandom.js';
+import indexStart from '../index.js';
 
-const nameGame = ('brain-calc');
 const leson = ('What is the result of the expression?');
 
 const logics = () => {
@@ -25,11 +24,11 @@ const logics = () => {
     default:
   }
   const unit = (`${num1} ${counter} ${num2}`);
-  return [unit, inputSystem];// возврат задания и ответа скрипта
+  return [unit, String(inputSystem)];
 };
 
 const braincalc = () => {
-  indexStart(nameGame, leson, logics);
+  indexStart(leson, logics);
 };
 
 export default braincalc;
