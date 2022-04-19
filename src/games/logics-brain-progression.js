@@ -19,10 +19,11 @@ const logics = () => {
   const unit = getProgression(progressionLength, progressionStart, progressionStep);
 
   const stelsIndex = getRandomInt(0, progressionLength);
+  // const stelsString = '..'; // создание спрятанного числа
   const inputSystem = unit[stelsIndex];
   unit[stelsIndex] = '..';
 
-  return [unit.join(), String(inputSystem)];
+  return [unit.join(' '), inputSystem];
 };
 
 const brainprogression = () => {
