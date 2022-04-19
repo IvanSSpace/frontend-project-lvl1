@@ -8,7 +8,7 @@ const indexStart = (leson, logics) => {
 
   for (let i = 0; i < 3; i += 1) {
     const [unit, inputSystem] = logics();
-    console.log(`Questions: ${unit}`);
+    console.log(`Question: ${unit}`);
     const inputUser = (readlineSync.question('Your answer: '));
     if (inputUser !== inputSystem) {
       console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
