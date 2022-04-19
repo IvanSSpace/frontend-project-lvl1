@@ -2,16 +2,21 @@ import getRandomInt from '../modRandom.js';
 import indexStart from '../index.js';
 
 const leson = ('Answer "yes" if given number is prime. Otherwise answer "no".');
+
+const primeFunc = (num) => {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const logics = () => {
   const randomNum = getRandomInt(3, 10);
 
-  let inputSystem = 'yes';
-  for (let i = 2; i < randomNum; i += 1) {
-    if (randomNum % i === 0) {
-      inputSystem = 'no';
-      break;
-    }
-  }
+  const inputSystem = primeFunc(randomNum) ? 'yes' : 'no';
+
   const unit = (`${randomNum}`);
   return [unit, inputSystem];
 };

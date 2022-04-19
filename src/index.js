@@ -16,8 +16,7 @@ const indexStart = (leson, logics) => {
       return;
     }
     console.log('Correct!');
-
-    console.log(`Congratulations, ${name}!`);
   }
+  console.log(`Congratulations, ${name}!`);
 };
 export default indexStart;
