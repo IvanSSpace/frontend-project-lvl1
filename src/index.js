@@ -12,7 +12,7 @@ const indexStart = (leson, logics) => {
     const inputUser = (readlineSync.question('Your answer: '));
     if (inputUser !== inputSystem) {
       console.log(`${inputUser} is wrong answer ;(. Correct answer was ${inputSystem}.`);
-      console.log(`Let's try again, ${name}`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
     console.log('Correct!');
