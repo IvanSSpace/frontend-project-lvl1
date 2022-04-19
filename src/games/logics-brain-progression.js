@@ -15,7 +15,7 @@ const getProgression = (progressionLength, progressionStart, progressionStep) =>
 const logics = () => {
   const progressionLength = getRandomInt(5, 10);
   const progressionStart = getRandomInt(1, 10);
-  const progressionStep = getRandomInt(1, 10);
+  const progressionStep = getRandomInt(1, 6);
   const unit = getProgression(progressionLength, progressionStart, progressionStep);
 
   const stelsIndex = getRandomInt(0, progressionLength);

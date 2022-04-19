@@ -12,12 +12,12 @@
 
 <!-- 1 make brain-even 2 make brain-calc 3 make brain-gcd 4 make brain-progression 5 make brain-prime -->
 ### make brain-even
-[![asciicast](https://asciinema.org/a/481720.svg)](https://asciinema.org/a/481720)
+[![asciicast](https://asciinema.org/a/488527.svg)](https://asciinema.org/a/488527)
 ### make brain-calc
-[![asciicast](https://asciinema.org/a/481725.svg)](https://asciinema.org/a/481725)
+[![asciicast](https://asciinema.org/a/488537.svg)](https://asciinema.org/a/488537)
 ### make brain-gcd
-[![asciicast](https://asciinema.org/a/481731.svg)](https://asciinema.org/a/481731)
+[![asciicast](https://asciinema.org/a/488549.svg)](https://asciinema.org/a/488549)
 ### make brain-progression
-[![asciicast](https://asciinema.org/a/481737.svg)](https://asciinema.org/a/481737)
+[![asciicast](https://asciinema.org/a/488583.svg)](https://asciinema.org/a/488583)
 ### make brain-prime
-[![asciicast](https://asciinema.org/a/481739.svg)](https://asciinema.org/a/481739)
+[![asciicast](https://asciinema.org/a/488584.svg)](https://asciinema.org/a/488584)
