@@ -7,7 +7,7 @@ const evenTest = (num) => num % 2 === 0;
 
 const logics = () => {
   const randomNum = getRandomInt(1, 100);
-  const unit = (`${randomNum}`);
+  const unit = randomNum;
   const inputSystem = evenTest(unit) ? 'yes' : 'no';
   return [unit, inputSystem];
 };
