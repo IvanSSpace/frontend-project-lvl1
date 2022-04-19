@@ -23,7 +23,7 @@ const logics = () => {
   const inputSystem = unit[stelsIndex];
   unit[stelsIndex] = '..';
 
-  return [unit.join(' '), inputSystem];
+  return [unit.join(' '), String(inputSystem)];
 };
 
 const brainprogression = () => {
