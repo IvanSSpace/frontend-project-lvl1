@@ -2,10 +2,12 @@ import getRandomInt from '../modRandom.js';
 import indexStart from '../index.js';
 
 const leson = 'Answer "yes" if the number is even, otherwise answer "no".';
-const evenTest = (number) => ((number % 2 === 0));
+
+const evenFunc = (isDivided) => ((isDivided % 2 === 0));
+
 const logics = () => {
   const unit = getRandomInt(0, 100);
-  const inputSystem = (evenTest(unit)) ? 'yes' : 'no';
+  const inputSystem = (evenFunc(unit)) ? 'yes' : 'no';
   return [unit, inputSystem];
 };
 

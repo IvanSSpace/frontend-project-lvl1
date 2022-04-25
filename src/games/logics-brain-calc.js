@@ -3,14 +3,14 @@ import indexStart from '../index.js';
 
 const leson = ('What is the result of the expression?');
 
-const calcuFunc = (num1, num2, counter) => {
-  switch (counter) {
+const calcuFunc = (firstNum, lastNum, operator) => {
+  switch (operator) {
     case '+':
-      return num1 + num2;
+      return firstNum + lastNum;
     case '-':
-      return num1 - num2;
+      return firstNum - lastNum;
     case '*':
-      return num1 * num2;
+      return firstNum * lastNum;
     default:
       throw new Error('Eslint remove consistent-return');
   }
@@ -19,13 +19,13 @@ const calcuFunc = (num1, num2, counter) => {
 const arrSigns = ['+', '-', '*'];
 
 const logics = () => {
-  const firstNum1 = getRandomInt(1, 10);
-  const lastNum2 = getRandomInt(1, 10);
-  const counter = arrSigns[getRandomInt(0, arrSigns.length - 1)];
+  const firstNum = getRandomInt(1, 10);
+  const lastNum = getRandomInt(1, 10);
+  const operator = arrSigns[getRandomInt(0, arrSigns.length - 1)];
 
-  const inputSystem = calcuFunc(firstNum1, lastNum2, counter);
+  const inputSystem = calcuFunc(firstNum, lastNum, operator);
 
-  const unit = `${firstNum1} ${counter} ${lastNum2}`;
+  const unit = `${firstNum} ${operator} ${lastNum}`;
   return [unit, String(inputSystem)];
 };
 
