@@ -19,13 +19,13 @@ const calcuFunc = (num1, num2, counter) => {
 const arrSigns = ['+', '-', '*'];
 
 const logics = () => {
-  const num1 = getRandomInt(1, 10);
-  const num2 = getRandomInt(1, 10);
+  const firstNum1 = getRandomInt(1, 10);
+  const lastNum2 = getRandomInt(1, 10);
   const counter = arrSigns[getRandomInt(0, arrSigns.length - 1)];
 
-  const inputSystem = calcuFunc(num1, num2, counter);
+  const inputSystem = calcuFunc(firstNum1, lastNum2, counter);
 
-  const unit = (`${num1} ${counter} ${num2}`);
+  const unit = `${firstNum1} ${counter} ${lastNum2}`;
   return [unit, String(inputSystem)];
 };
 

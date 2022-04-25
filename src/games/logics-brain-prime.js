@@ -19,7 +19,7 @@ const logics = () => {
 
   const inputSystem = primeFunc(randomNum) ? 'yes' : 'no';
 
-  const unit = (`${randomNum}`);
+  const unit = randomNum;
   return [unit, inputSystem];
 };
 
