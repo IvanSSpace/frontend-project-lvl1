@@ -3,30 +3,27 @@ import indexStart from '../index.js';
 
 const leson = ('What is the result of the expression?');
 
-const calculate = (num1, num2, counter) => {
-  let result = 0;
+const calcuFunc = (num1, num2, counter) => {
   switch (counter) {
     case '+':
-      result = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      result = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      result = num1 * num2;
-      break;
+      return num1 * num2;
     default:
+      throw new Error('Eslint remove consistent-return');
   }
-  return result;
 };
+
+const arrSigns = ['+', '-', '*'];
 
 const logics = () => {
   const num1 = getRandomInt(1, 10);
   const num2 = getRandomInt(1, 10);
-  const arrSigns = ['+', '-', '*'];
-  const counter = arrSigns[getRandomInt(0, 2)];
+  const counter = arrSigns[getRandomInt(0, arrSigns.length - 1)];
 
-  const inputSystem = calculate(num1, num2, counter);
+  const inputSystem = calcuFunc(num1, num2, counter);
 
   const unit = (`${num1} ${counter} ${num2}`);
   return [unit, String(inputSystem)];

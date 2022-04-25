@@ -4,12 +4,14 @@ import indexStart from '../index.js';
 const leson = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 const primeFunc = (num) => {
+  let prime = true;
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return false;
+      prime = false;
+      break;
     }
   }
-  return true;
+  return prime;
 };
 
 const logics = () => {
