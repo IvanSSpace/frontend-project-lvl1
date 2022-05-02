@@ -1,9 +1,9 @@
 import getRandomInt from '../modRandom.js';
-import indexStart from '../index.js';
+import gameEngine from '../index.js';
 
-const leson = ('What is the result of the expression?');
+const rules = 'What is the result of the expression?';
 
-const calcuFunc = (firstNum, lastNum, operator) => {
+const calculate = (firstNum, lastNum, operator) => {
   switch (operator) {
     case '+':
       return firstNum + lastNum;
@@ -18,19 +18,19 @@ const calcuFunc = (firstNum, lastNum, operator) => {
 
 const arrSigns = ['+', '-', '*'];
 
-const logics = () => {
+const generateRoundData = () => {
   const firstNum = getRandomInt(1, 10);
   const lastNum = getRandomInt(1, 10);
   const operator = arrSigns[getRandomInt(0, arrSigns.length - 1)];
 
-  const inputSystem = calcuFunc(firstNum, lastNum, operator);
+  const answer = calculate(firstNum, lastNum, operator);
 
-  const unit = `${firstNum} ${operator} ${lastNum}`;
-  return [unit, String(inputSystem)];
+  const question = `${firstNum} ${operator} ${lastNum}`;
+  return [question, String(answer)];
 };
 
 const braincalc = () => {
-  indexStart(leson, logics);
+  gameEngine(rules, generateRoundData);
 };
 
 export default braincalc;
